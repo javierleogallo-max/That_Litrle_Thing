@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #b363ac;
+    background-color: #7e4079;
 }
 
 .container {
@@ -48,7 +48,7 @@ body {
 }
 
 h1 {
-    color: #050464; /* Cambié a blanco para que resalte en tu fondo morado */
+    color: #0a07af; /* Cambié a blanco para que resalte en tu fondo morado */
     font-size: 3rem; /* Hazlo más grande para que luzca la tipografía */
     margin-bottom: 10px;
 }
