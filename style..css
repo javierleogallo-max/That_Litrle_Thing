@@ -14,14 +14,30 @@ body {
     background-color: #b363ac;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 90%; /* Ajuste para móviles */
+    width: 500px;
+    padding: 20px;
+}
+
 .container img {
-    width: 90%;          /* Ocupa el 90% del ancho del contenedor en móviles */
-    max-width: 500px;    /* Pero nunca será más ancha de 500px en monitores grandes */
-    height: auto;        /* Mantiene la proporción original (no se estira ni se deforma) */
-    display: block;
-    margin: 0 auto;      /* Centra la imagen automáticamente */
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    /* Fuerza el ancho al 100% del contenedor y permite que sea flexible */
+    width: 100% !important;
+    
+    /* El tamaño máximo es el que quieras, pero en móviles ocupará todo el ancho */
+    max-width: 500px !important; 
+    
+    /* Mantiene la proporción para que no se deforme */
+    height: auto !important;
+    
+    /* Esto es fundamental: asegura que sea un bloque para poder centrarlo */
+    display: block !important;
+    margin: 0 auto !important;
 }
 
 /* Estilo para la imagen estática */
@@ -33,6 +49,11 @@ body {
 }
 
 h1 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Cambia la fuente aquí */
+    font-family: 'Dancing Script', cursive; 
     color: #333;
 }
 
