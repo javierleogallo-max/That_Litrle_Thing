@@ -1,6 +1,10 @@
 /* Importar la fuente desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
+body {
+    background-color: yellow !important;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -40,11 +44,11 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgb(0, 0, 0);
 }
 
 h1 {
-    color: #af0707; /* Cambié a blanco para que resalte en tu fondo morado */
+    color: #050464; /* Cambié a blanco para que resalte en tu fondo morado */
     font-size: 3rem; /* Hazlo más grande para que luzca la tipografía */
     margin-bottom: 10px;
 }
@@ -57,8 +61,8 @@ h1 {
 
 .btn a {
     text-decoration: none;
-    color: #fff;
-    background: #ff6b81; /* Un rosa más bonito */
+    color: #6b6eff;
+    background: #84ff6b; /* Un rosa más bonito */
     padding: 12px 30px;
     border-radius: 50px; /* Botones más redondeados */
     font-weight: bold;
@@ -69,5 +73,5 @@ h1 {
 /* Efecto al pasar el cursor sobre los botones */
 .btn a:hover {
     transform: scale(1.1);
-    background: #ff4757;
+    background: #6bff72;
 }
