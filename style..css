@@ -1,8 +1,12 @@
+/* Importar la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Cambia la fuente aquí */
+    font-family: 'Dancing Script', cursive; 
 }
 
 body {
@@ -15,29 +19,20 @@ body {
 }
 
 .container {
+    width: 90%;          /* Ocupa el 90% del ancho del dispositivo */
+    max-width: 500px;    /* Pero tiene un tope máximo para que no se vea gigante en PC */
+    text-align: center;
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
     gap: 20px;
-    max-width: 90%; /* Ajuste para móviles */
-    width: 500px;
-    padding: 20px;
 }
 
 .container img {
-    /* Fuerza el ancho al 100% del contenedor y permite que sea flexible */
-    width: 100% !important;
-    
-    /* El tamaño máximo es el que quieras, pero en móviles ocupará todo el ancho */
-    max-width: 500px !important; 
-    
-    /* Mantiene la proporción para que no se deforme */
-    height: auto !important;
-    
-    /* Esto es fundamental: asegura que sea un bloque para poder centrarlo */
-    display: block !important;
-    margin: 0 auto !important;
+    width: 100%;         /* Se ajusta al 100% de lo que permita el contenedor */
+    height: auto;        /* Mantiene la proporción para no deformarse */
+    border-radius: 20px;
+    display: block;      /* Elimina espacios extra debajo de la imagen */
 }
 
 /* Estilo para la imagen estática */
@@ -49,12 +44,9 @@ body {
 }
 
 h1 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* Cambia la fuente aquí */
-    font-family: 'Dancing Script', cursive; 
-    color: #333;
+    color: #af0707; /* Cambié a blanco para que resalte en tu fondo morado */
+    font-size: 3rem; /* Hazlo más grande para que luzca la tipografía */
+    margin-bottom: 10px;
 }
 
 .container .btn {
