@@ -6,12 +6,12 @@
 }
 
 body {
-    width: 100%;
+    width: 80%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffe5e5;
+    background-color: #b363ac;
 }
 
 .container {
